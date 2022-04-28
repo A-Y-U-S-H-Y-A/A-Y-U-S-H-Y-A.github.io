@@ -189,8 +189,8 @@
                 url: 'https://personal-emailer.herokuapp.com/send',
                 crossDomain: true,
                 method: 'POST',
+		        dataType: 'JSON',
 		        data: formData,
-                contentType: JSON,
 		        success: function(data) {
                     alert(data);
 		        },
