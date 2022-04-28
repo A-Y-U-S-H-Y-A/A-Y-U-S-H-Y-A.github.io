@@ -183,18 +183,19 @@
         var typed = new Typed('.typed', options);
 
         function callme(){
-            var formData = {'name':document.querySelector('#name').value,'email':document.querySelector('#email').value,'message':document.querySelector('#message').value};
-        $.ajax({
+            var formData = {'name': document.querySelector('#name').value, 'email': document.querySelector('#email').value, 'message': document.querySelector('#message').value};
+            console.log(formData)
+            $.ajax({
                 url: 'https://personal-emailer.herokuapp.com/send',
                 crossDomain: true,
                 method: 'POST',
 		        data: formData,
                 contentType: JSON,
 		        success: function(data) {
-                    alert(data)
+                    alert(data);
 		        },
                 error: function(a) {
-                    console.log(a)  
+                    console.log(a);
                 }
             });
         }
