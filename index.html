@@ -183,14 +183,13 @@
         var typed = new Typed('.typed', options);
 
         function callme(){
-            var formData = new FormData(document.getElementById("contact"));
+            var formData = {'name':document.querySelector('#name').value,'email':document.querySelector('#email').value,'message':document.querySelector('#message').value};
         $.ajax({
                 url: 'https://personal-emailer.herokuapp.com/send',
                 crossDomain: true,
                 method: 'POST',
 		        data: formData,
-                processData: false,
-                contentType: false,
+                contentType: JSON,
 		        success: function(data) {
                     alert(data)
 		        },
