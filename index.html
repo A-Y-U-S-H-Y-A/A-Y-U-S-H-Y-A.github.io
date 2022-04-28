@@ -189,8 +189,8 @@
             alert(this.responseText)
             }
         };
-        xhttp.setRequestHeader("Access-Control-Allow-Origin", "*")
         xhttp.open("POST", "https://personal-emailer.herokuapp.com/send");
+        xhttp.setRequestHeader("Access-Control-Allow-Origin", "*")
         xhttp.send(formData); 
         }
     </script>
