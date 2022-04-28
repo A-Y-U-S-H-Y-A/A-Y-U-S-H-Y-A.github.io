@@ -189,6 +189,8 @@
                 crossDomain: true,
                 method: 'POST',
 		        data: formData,
+                processData: false,
+                contentType: false,
 		        success: function(data) {
                     alert(data)
 		        },
