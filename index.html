@@ -184,17 +184,18 @@
 
         function callme(){
             var formData = {'name': document.querySelector('#name').value, 'email': document.querySelector('#email').value, 'message': document.querySelector('#message').value};
-            console.log(formData)
+            // console.log(formData)
             $.ajax({
                 url: 'https://personal-emailer.herokuapp.com/send',
                 crossDomain: true,
                 method: 'POST',
-		        dataType: 'JSON',
+		        dataType: false,
 		        data: formData,
 		        success: function(data) {
                     alert(data);
 		        },
                 error: function(a) {
+                    console.log('kk')
                     console.log(a);
                 }
             });
