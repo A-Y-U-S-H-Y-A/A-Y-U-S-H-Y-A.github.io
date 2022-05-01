@@ -113,23 +113,7 @@ padding-top: 0%;
   }
 
 
-@media only screen and (max-width: 766px) {
-    #landing {
-      text-align: center;
-    }
-    .card-img-top{
-        width: 50%;
-    }
-    .hom{
-        display: none;
-    }
-  }
 
-@media only screen and (min-width: 766px) {
-    .hod{
-        display: none;
-    }
-  }
 
   .m{
     border: 1px solid white;
@@ -237,5 +221,30 @@ hr{
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
+    }
+  }
+
+  .spimg{
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 766px) {
+    #landing {
+      text-align: center;
+    }
+    .card-img-top{
+        width: 50%;
+    }
+    .hom{
+        display: none;
+    }
+  }
+
+@media only screen and (min-width: 766px) {
+    .hod{
+        display: none;
+    }
+    .spimg{
+      width: 80%;
     }
   }
