@@ -139,7 +139,7 @@ hr{
     width: 100%;
     background-color: rgba(32, 33, 36, 0.75);
     position:fixed;
-    z-index: 9999999;
+    z-index: 8;
   }
   
   .nav > .nav-header {
