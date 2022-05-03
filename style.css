@@ -248,3 +248,46 @@ hr{
       width: 80%;
     }
   }
+
+  #preloader{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(32, 33, 36);
+    position: fixed;
+    z-index: 9;
+    top:0;
+    right: 0;
+    text-align: center;
+    color: white;
+  }
+  #loader{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+  
+  #square{
+      position: absolute;
+      top: 40%;
+      left: 0%;
+      height: 20vh;
+      width: 8rem;
+      z-index: 11;
+      background:  linear-gradient(to right,rgb(32, 33, 36),rgba(32,33,36,0.75),rgba(32,33,36,0.5),rgba(32,33,36,0.25),rgba(32,33,36,0));
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    animation-direction: alternate;
+  }
+    
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { left:0% }
+      100% { left: 100%; }
+    }
+    
+    @keyframes spin {
+      0% { left:0% }
+      100% { left: 100%; }
+    }
